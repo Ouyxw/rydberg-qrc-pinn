@@ -1,0 +1,35 @@
+# Python caches, builds and test output
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+
+# Local environments and credentials
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.aws/
+
+# Platform files
+.DS_Store
+Thumbs.db
+
+# Dataset payloads; preserve directory markers and data manifests
+/data/**/*
+!/data/**/
+!/data/**/.gitkeep
+!/data/**/manifest.yaml
+
+# Local feature caches and experiment artifacts
+/artifacts/**/*
+!/artifacts/**/
+!/artifacts/**/.gitkeep
